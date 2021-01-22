@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;}
+
+#banner{
+    background-image: linear-gradient(rgba(0,0,0,0.5),#009688),url('Barber_Shop_img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+.banner-text{
+    text-align: center;
+    padding-top: 180px;   
+    color: white; 
+}
+.banner-text h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+}
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+}
+.banner-btn{
+    margin: 70px auto 0;
+}
+.banner-btn a{
+    width: 150px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px;
+    border: 1px solid white;
+    padding: 12px 0;
+    color: white;
+    position: relative;
+    z-index: 1;
+    font-style: bold;
+    transition: color 0.5s;
+}
+.banner-btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    z-index: -1;
+    transition: 0.5s ;
+}
+.banner-btn a:hover span{
+    width: 100%;
+}
+.banner-btn a:hover {
+color: black;}
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -250; 
+    background-color: #009688;
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+    background-color: #009688;
+    border-radius: 3px;
+    text-align: center;
+    z-index: 3;
+
+}
+#menuBtn img{
+    width: 20px;
+    margin-top: 15px;
+}
+
+
+@media screen and (max-width: 770px) {
+    .banner-text h1{
+        font-size: 44px;
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+  }
+
+  /* Features */
+  #feature{
+    width: 100%;
+    padding: 70px 0;   
+  }
+  .title-text{
+      text-align: center;
+      padding-bottom: 70px;
+  }
+  .title-text p{
+      margin:auto;
+      font-size: 20px;
+      color: #009688;
+      font-weight: bold;
+      z-index: 1;
+      display: inline-block;
+      position: relative;
+  }
+  .title-text p::after{
+      content: '';
+      width: 50px;
+      height: 35px;
+      background:linear-gradient(#019587,#fff);
+      position: absolute;
+      top: -20px;
+      left: 0;
+      z-index: -1;
+      transform: rotate(10deg);
+      border-top-left-radius: 35px;
+      border-top-left-radius: 35px;
+  }
+.title-text h1{
+    font-size: 50px;
+}
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.features{
+    flex-basis: 50%;
+}
+.features-img{
+    margin: auto;
+    flex-basis: 50%;
+}
+.features-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.features h1{
+    text-align: left;
+    margin-bottom: 10px;
+    color:#009688;
+}
+.feature-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.feature-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color:#009688;
+    line-height: 50px;
+    border-radius: 8px;
+    border:1px solid #009688;
+}
+.feature-text{
+    padding: 0 20px;
+    text-align: initial;
+}
+
+@media screen and (max-width: 770px) {
+    .title-text h1{
+        font-size: 35px;
+    }
+    .features{
+        flex-basis: 100%;
+    }
+    .features-img{
+        margin: auto;
+        flex-basis: 100%;
+    }
+    .features-img img{
+        width: 100%;
+        border-radius: 10px;
+    }
+  }
